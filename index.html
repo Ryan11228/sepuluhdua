@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Name — Designer &amp; Front-end Developer</title>
+<meta name="description" content="Personal site of Your Name — designer and front-end developer.">
+<meta name="theme-color" content="#fff6f9">
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="header" data-header>
+  <div class="shell header__inner">
+    <a class="header__name" href="#top" data-name>Your Name</a>
+    <nav class="header__nav" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ── Hero ─────────────────────────────────────────────── -->
+  <section class="hero" id="top">
+    <div class="petals" aria-hidden="true">
+      <span class="petal" style="--x:8%;  --t:16s; --d:0s;"></span>
+      <span class="petal" style="--x:22%; --t:20s; --d:4s;"></span>
+      <span class="petal" style="--x:41%; --t:14s; --d:2s;"></span>
+      <span class="petal" style="--x:58%; --t:22s; --d:6s;"></span>
+      <span class="petal" style="--x:73%; --t:18s; --d:1s;"></span>
+      <span class="petal" style="--x:88%; --t:24s; --d:8s;"></span>
+      <span class="petal" style="--x:35%; --t:19s; --d:11s;"></span>
+      <span class="petal" style="--x:66%; --t:21s; --d:9s;"></span>
+    </div>
+
+    <span class="vertical-label" aria-hidden="true">ようこそ</span>
+
+    <div class="shell hero__inner">
+      <div class="hero__text" data-hero-text></div>
+      <figure class="portrait" data-portrait></figure>
+    </div>
+  </section>
+
+  <!-- ── About ────────────────────────────────────────────── -->
+  <section class="section" id="about">
+    <div class="shell split">
+      <div class="section__aside">
+        <h2 class="section__title" data-reveal data-about-title>About</h2>
+      </div>
+      <div class="about__body" data-about-body></div>
+    </div>
+  </section>
+
+  <!-- ── Work ─────────────────────────────────────────────── -->
+  <section class="section" id="work">
+    <div class="shell split">
+      <div class="section__aside">
+        <h2 class="section__title" data-reveal data-work-title>Selected work</h2>
+        <p class="section__note" data-reveal style="--d:80ms" data-work-note></p>
+      </div>
+      <ul class="work" data-work></ul>
+    </div>
+  </section>
+
+  <!-- ── Contact ──────────────────────────────────────────── -->
+  <section class="section" id="contact">
+    <div class="shell split">
+      <div class="section__aside">
+        <h2 class="section__title" data-reveal>Contact</h2>
+      </div>
+      <div class="contact__body" data-contact></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="shell footer__inner">
+    <p data-footer></p>
+    <p data-footer-meta></p>
+  </div>
+</footer>
+
+<!-- ── Photo lightbox ─────────────────────────────────────── -->
+<div class="lightbox" data-lightbox hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lightbox__close" type="button" data-lightbox-close aria-label="Close photo">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+      <path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor"
+            stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+  </button>
+  <img class="lightbox__img" data-lightbox-img alt="">
+</div>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
